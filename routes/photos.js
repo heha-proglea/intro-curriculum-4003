@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
 });
 
 // パラメータtitleに対して行う共通の処理を記述
-router.param('title', (req, res, next, title) => {
+router.param('title', (req, res, next, title) => { // paramはパラメーター周りを解決するミドルウェア関数
   // TODO: 変数titleに対してファイル存在チェックをする for XSS対策
   res.send(title); // 単なる文字列としてレスポンス返す
   next();
