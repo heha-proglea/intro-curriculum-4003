@@ -1,3 +1,4 @@
+// ----- サーバー起動時に読み込まれる、サーバー設定等の書かれたファイル -----
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
